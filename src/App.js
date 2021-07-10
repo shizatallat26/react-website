@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { Component } from 'react';
+import Home from "./Container/Home";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./Contact/navbar";
+import {Form1} from "./Container/Form";
+import {Form2} from "./Container/Form";
+import AboutUs from "./Container/Aboutus";
+import Services from "./Container/Services";
+import AppRouter from "./config/router"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <AppRouter /> 
+    
+        {/* <Home /> */}
+
+        {/* <Form1 />
+        <Form2 /> */}
+
+        {/* <AboutUs /> */}
+
+        {/* <Services /> */}
+
+
+
+      </div>
+    )
+  }
 }
 
 export default App;
